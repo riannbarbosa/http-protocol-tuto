@@ -2,7 +2,7 @@
 
 ---
 
-<div style={{ textAlign: "left" }}>
+<div style={{ textAlign: "left", color:'white' }}>
   ## 1 - Instalação do servidor HTTP
   ### No linux instale o NGINX ou Apache com o seguinte comando: <br />
 
@@ -13,8 +13,8 @@
       <div
         style={{
           padding: "5px",
-          background: "#5072A7",
-          borderRadius: "8px",
+           background: "#3d3d3d",
+          borderRadius: "6px",
           maxWidth: "80%",
         }}
       >
@@ -27,8 +27,8 @@
       <div
         style={{
           padding: "5px",
-          background: "#5072A7",
-          borderRadius: "8px",
+          background: "#3d3d3d",
+          borderRadius: "6px",
           maxWidth: "80%",
         }}
       >
@@ -36,7 +36,7 @@
         sudo service apache2 start
       </div>
       </div>
-   <hr style={{marginRight:'150px', border:'none',width:'1px',color:'#333', background:'gray'}} />
+   <hr style={{marginRight:'70px', border:'none',width:'1px',color:'#333', background:'gray'}} />
     <div style={{width:'100%'}}>
       #### NGINX:
 
@@ -44,30 +44,43 @@
       <div
         style={{
           padding: "5px",
-          background: "#5072A7",
-          borderRadius: "8px",
+           background: "#3d3d3d",
+          borderRadius: "6px",
           maxWidth: "80%",
         }}
       >
-        sudo yum install httpd <br />
-        sudo systemctl enable httpd <br />
-        sudo systemctl start httpd
+        sudo yum install epel-release <br />
+        sudo yum update <br />
+        sudo yum install nginx
       </div>
       <br />
       Ubuntu/Debian:
       <div
         style={{
           padding: "5px",
-          background: "#5072A7",
-          borderRadius: "8px",
+          background: "#3d3d3d",
+          borderRadius: "6px",
            maxWidth: "80%",
         }}
       >
-        sudo apt install apache2 <br />
-        sudo service apache2 start
+        sudo apt-get update <br />
+        sudo apt-get install nginx
       </div>
 
     </div>
     </div>
 
+
+    Para verificar a instalação:
+   <div
+        style={{
+          paddingLeft: "4px",
+          padding:'1px',
+          background: "#3d3d3d",
+          borderRadius: "6px",
+           maxWidth: "20%",
+        }}
+      >
+        sudo nginx -v
+      </div>
   </div>
