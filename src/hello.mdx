@@ -1,10 +1,55 @@
 # Tutorial de Instalação e Configuração
 
 ---
-
 <div style={{ textAlign: "left" }}>
-  ## 1 - Instalação do servidor HTTP
-  ### No linux instale o NGINX ou Apache com o seguinte comando: <br />
+  ## Instalação do servidor HTTP com  Node.js
+
+  Vamos utilizar o Node.js para o uso do protocolo HTTP
+
+  ### Instalação
+  1 - Clone o repositório 
+ <div
+        style={{
+          padding: "5px",
+           background: "#3d3d3d",
+          maxWidth: "50%",
+          color:'white',
+        }}
+      >
+   ``` git clone https://github.com/alisonvor/redes-http ```
+</div>
+
+2 - Vá até o diretório
+<div
+        style={{
+          padding: "5px",
+           background: "#3d3d3d",
+          maxWidth: "50%",
+          color:'white',
+        }}
+      >
+   ``` cd redes-http ```
+</div>
+
+ E instale as dependências executando <i><b>``` npm install ``` </b></i>.
+
+ Para iniciar o servidor execute o seguinte comando:
+ <div
+        style={{
+          padding: "5px",
+           background: "#3d3d3d",
+          maxWidth: "50%",
+          color:'white',
+        }}
+      >
+   ``` npm start ```
+</div>
+<br/>
+ <hr style={{ border:'none',height:'1px',color:'#333', background:'gray'}} />
+
+ ## Outra alternativa com NGINX/Apache
+
+  #### No linux instale o NGINX ou Apache com o seguinte comando: <br />
 
   <div style={{display:'flex'}}>
   <div style={{width:'100%'}}>
@@ -14,14 +59,13 @@
         style={{
           padding: "5px",
            background: "#3d3d3d",
-          borderRadius: "6px",
           maxWidth: "80%",
           color:'white',
         }}
       >
-        sudo yum install httpd <br />
-        sudo systemctl enable httpd <br />
-        sudo systemctl start httpd
+     ```   sudo yum install httpd  ``` <br />
+         ``` sudo systemctl enable httpd   ``` <br />
+       ```  sudo systemctl start httpd  ```
       </div>
       <br />
       Ubuntu/Debian:
@@ -29,13 +73,12 @@
         style={{
           padding: "5px",
           background: "#3d3d3d",
-          borderRadius: "6px",
           maxWidth: "80%",
           color:'white',
         }}
       >
-        sudo apt install apache2 <br />
-        sudo service apache2 start
+       ``` sudo apt install apache2 ``` <br />
+       ``` sudo service apache2 start ```
       </div>
       </div>
    <hr style={{marginRight:'5%', border:'none',width:'1px',color:'#333', background:'gray'}} />
@@ -47,14 +90,13 @@
         style={{
           padding: "5px",
            background: "#3d3d3d",
-          borderRadius: "6px",
           maxWidth: "80%",
           color:'white',
         }}
       >
-        sudo yum install epel-release <br />
-        sudo yum update <br />
-        sudo yum install nginx
+        ``` sudo yum install epel-release``` <br />
+       ``` sudo yum update``` <br />
+       ``` sudo yum install nginx```
       </div>
       <br />
       Ubuntu/Debian:
@@ -62,13 +104,12 @@
         style={{
           padding: "5px",
           background: "#3d3d3d",
-          borderRadius: "6px",
            maxWidth: "80%",
            color:'white',
         }}
       >
-        sudo apt-get update <br />
-        sudo apt-get install nginx
+      ```  sudo apt-get update``` <br />
+       ``` sudo apt-get install nginx```
       </div>
 
     </div>
@@ -80,19 +121,17 @@
 {" "}
 <div
   style={{
-    paddingLeft: "4px",
-    padding: "1px",
+    padding: "5px",
     background: "#3d3d3d",
-    borderRadius: "6px",
     maxWidth: "25%",
     color: "white",
   }}
 >
-  sudo nginx -v
+  ```sudo nginx -v```
 </div>
      O diretório padrão dos arquivos do site se encontra em <strong><i> /var/www/html </i></strong>
 
-      ## Acessando o web server
+      ### Acessando o web server
       A porta padrão é a 80, você pode estar acessando pelo
       <b>http://localhost</b> ou <b>http://localhost:80</b>
       <br/>
